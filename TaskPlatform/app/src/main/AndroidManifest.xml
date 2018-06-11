@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cumt.taskplatform">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/platform"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewTask"
+            android:label="@string/newTask" />
+        <activity
+            android:name=".More"
+            android:label="@string/more" />
+        <activity
+            android:name=".Person"
+            android:label="@string/information" />
+        <activity
+            android:name=".MyRelease"
+            android:label="@string/release" />
+        <activity
+            android:name=".TaskContent"
+            android:label="@string/task" />
+        <activity
+            android:name=".PersonalInformation"
+            android:label="@string/information" />
+        <activity
+            android:name=".ModifyInf"
+            android:label="@string/modifyInf" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Person_inf" />
+        <activity
+            android:name=".MyAcceptActivity"
+            android:label="@string/accept" />
+        <activity
+            android:name=".SMSActivity"
+            android:label="短信验证"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FindPWActivity"
+            android:label="找回密码"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SMS2Activity"
+            android:label="短信验证"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangePWActivity"
+            android:label="修改密码"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".introductionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".OpinionActivity" />
+        <activity android:name=".EditActivity"
+            android:label="编辑"></activity>
+    </application>
+
+</manifest>

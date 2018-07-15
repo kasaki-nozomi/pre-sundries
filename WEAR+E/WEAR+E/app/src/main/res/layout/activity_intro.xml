@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/intro_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:background="#00b4d4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/intro_title"/>
+
+    <TextView
+        android:id="@+id/intro_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/line"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/weare"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/intro_detail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/call_ar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:background="#00b4d4"
+            android:textColor="#ffffff"
+            android:text="AR:物体"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+
+        <Button
+            android:id="@+id/call_ar_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:background="#00b4d4"
+            android:textColor="#ffffff"
+            android:text="AR:动画"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
